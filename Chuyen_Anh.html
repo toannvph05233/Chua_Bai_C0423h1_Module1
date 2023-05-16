@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img style="width: 400px; height: 600px" src="https://tinhayvip.com/wp-content/uploads/2022/06/vsbg-5.jpg"
+     onclick="changeImg()" id="img">
+<button onclick="changeImg();">Changer</button>
+</body>
+</html>
+
+<script>
+    let img1 = "https://tinhayvip.com/wp-content/uploads/2022/06/vsbg-5.jpg";
+    let img2 = "https://openseauserdata.com/files/02d992a4c7039936aea0bce0ec7a5e1e.jpg";
+    let img3 = "https://hoclambanhkem.com/wp-content/uploads/2022/12/1671113587_192_VSBG-la-gi-He-lo-nhung-su-that-it-nguoi.jpg";
+    let count = 1;
+
+    function changeImg() {
+
+        let imgE = document.getElementById("img");
+        if (count === 1) {
+            imgE.src = img2;
+            count++;
+        } else if (count === 2) {
+            imgE.src = img3;
+            count++;
+        } else if (count === 3) {
+            imgE.src = img1;
+            count = 1;
+        }
+    }
+
+
+</script>
